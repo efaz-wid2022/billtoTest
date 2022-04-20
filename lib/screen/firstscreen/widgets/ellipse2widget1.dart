@@ -138,7 +138,7 @@ class GeneratedEllipse2Widget3 extends StatelessWidget {
 20 templates''',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 12.0,
+                    fontSize: 10.0,
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w400,
                     color: Color.fromARGB(255, 0, 0, 0),
@@ -184,7 +184,7 @@ your invoice''',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     // height: 1.171875,
-                    fontSize: 12.0,
+                    fontSize: 10.0,
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w400,
                     color: Color.fromARGB(255, 0, 0, 0),

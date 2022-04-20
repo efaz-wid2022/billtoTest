@@ -36,6 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   path_drawing: ^1.0.0
   flutter_keyboard_visibility: ^5.2.0
+  assorted_layout_widgets: ^5.6.1
+  auto_size_text: ^3.0.0
+  flutter_svg_provider: ^1.0.3
+  simple_icons: ^6.13.0
 
 dev_dependencies:
   flutter_test:
