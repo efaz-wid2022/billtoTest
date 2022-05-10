@@ -10,21 +10,6 @@ class SignUpPage extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: true,
       backgroundColor: Color(0xFFFFFFFF),
-      // appBar: AppBar(
-      //   elevation: 0,
-      //   brightness: Brightness.light,
-      //   backgroundColor: Colors.white,
-      //   leading: IconButton(
-      //     onPressed: () {
-      //       Navigator.pop(context);
-      //     },
-      //     icon: Icon(Icons.arrow_back_ios,
-      //       size: 20,
-      //       color: Colors.black,),
-      //
-      //
-      //   ),
-      // ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(top: 30),
@@ -210,7 +195,7 @@ class SignUpPage extends StatelessWidget {
   }
 }
 
-// we will be creating a widget for text field
+// creating a widget for text field
 Widget inputFile({label, obscureText = false}) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.center,

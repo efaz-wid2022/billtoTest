@@ -1,3 +1,4 @@
+import 'package:billto/screen/SignInScreen/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 
 class GeneratedLoginWidget extends StatelessWidget {
@@ -22,7 +23,14 @@ class GeneratedLoginWidget extends StatelessWidget {
             decoration: TextDecoration.underline,
           ),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => SignInPage(),
+            ),
+          );
+        },
       ),
     );
   }

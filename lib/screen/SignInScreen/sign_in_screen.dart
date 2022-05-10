@@ -1,14 +1,18 @@
 import 'dart:ui';
-import 'package:billto/screen/Dashboard/Dashboard_Screen.dart';
-import 'package:billto/screen/SignInScreen/sign_in_screen.dart';
+import 'package:billto/screen/SignUpScreen/sign_up_screen_test.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_icons/simple_icons.dart';
 import 'package:flutter_screen_scaler/flutter_screen_scaler.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-class SignUpPage extends StatelessWidget {
-  const SignUpPage({Key? key}) : super(key: key);
+class SignInPage extends StatefulWidget {
+  SignInPage({Key? key}) : super(key: key);
 
+  @override
+  State<SignInPage> createState() => _SignInPageState();
+}
+
+class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
     ScreenScaler scaler = ScreenScaler()..init(context);
@@ -37,7 +41,7 @@ class SignUpPage extends StatelessWidget {
                 ),
               ),
               Text(
-                'SignUp',
+                'SignIn',
                 style: TextStyle(
                   color: Color(0xFF000000),
                   fontSize: 24,
@@ -45,7 +49,7 @@ class SignUpPage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 3.h),
+              SizedBox(height: 5.h),
               SingleChildScrollView(
                 child: Container(
                   height: scaler.getHeight(80),
@@ -64,11 +68,10 @@ class SignUpPage extends StatelessWidget {
                   ),
                   child: Column(
                     children: [
-                      SizedBox(height: 3.h),
+                      SizedBox(height: 5.h),
                       inputFile(label: "Full Name / Company Name"),
-                      inputFile(label: "Email / Phone number"),
                       showPass(),
-                      SizedBox(height: 3.h),
+                      SizedBox(height: 5.h),
                       //Continue
                       Container(
                         padding: EdgeInsets.only(top: 3),
@@ -92,7 +95,13 @@ class SignUpPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 20),
+                      Divider(
+                        height: 5.h,
+                        thickness: 1,
+                        indent: 14,
+                        endIndent: 14,
+                        color: Color(0xFFCCCCCC),
+                      ),
                       //Google
                       Container(
                         padding: EdgeInsets.only(top: 3),
@@ -131,16 +140,10 @@ class SignUpPage extends StatelessWidget {
                       Container(
                         padding: EdgeInsets.only(top: 3),
                         child: MaterialButton(
+                          // minWidth: double.infinity,
                           minWidth: scaler.getWidth(77),
                           height: 6.h,
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => DashBoard(),
-                              ),
-                            );
-                          },
+                          onPressed: () {},
                           color: Color(0xFFFFB317),
                           elevation: 5,
                           shape: RoundedRectangleBorder(
@@ -167,13 +170,13 @@ class SignUpPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 4.h),
+                      SizedBox(height: 5.h),
                       //Sign In
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           Text(
-                            "Already on Billto?",
+                            "Don't have an account?",
                             style: TextStyle(
                               fontSize: 14,
                               color: Color(0xFF898989),
@@ -189,12 +192,12 @@ class SignUpPage extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => SignInPage(),
+                                  builder: (context) => SignUpPage(),
                                 ),
                               );
                             },
                             child: Text(
-                              " Sign in here",
+                              " Sign Up",
                               style: TextStyle(
                                 fontSize: 14,
                                 color: Color(0xFFFFB317),
@@ -250,9 +253,9 @@ Widget inputFile({label}) {
           ),
         ),
       ),
-      // SizedBox(
-      //   height: 2.h,
-      // )
+      SizedBox(
+        height: 2.h,
+      )
     ],
   );
 }
@@ -321,10 +324,8 @@ class _showPassState extends State<showPass> {
   }
 
   void _togglePasswordView() {
-    setState(
-      () {
-        _isHidden = !_isHidden;
-      },
-    );
+    setState(() {
+      _isHidden = !_isHidden;
+    });
   }
 }
