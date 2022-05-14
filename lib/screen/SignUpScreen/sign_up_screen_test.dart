@@ -244,6 +244,11 @@ Widget inputFile({label}) {
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide(color: Colors.grey.shade400),
             ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: const BorderSide(
+                color: Color(0xFFFFB317),
+              ),
+            ),
             border: OutlineInputBorder(
               borderSide: BorderSide(color: Colors.grey.shade400),
             ),
@@ -309,6 +314,11 @@ class _showPassState extends State<showPass> {
               filled: true,
               enabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.grey.shade400),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                  color: Color(0xFFFFB317),
+                ),
               ),
               border: OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.grey.shade400),

@@ -69,7 +69,7 @@ class _SignInPageState extends State<SignInPage> {
                   child: Column(
                     children: [
                       SizedBox(height: 5.h),
-                      inputFile(label: "Full Name / Company Name"),
+                      inputFile(label: "Email / Phone number"),
                       showPass(),
                       SizedBox(height: 5.h),
                       //Continue
@@ -247,6 +247,11 @@ Widget inputFile({label}) {
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide(color: Colors.grey.shade400),
             ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: const BorderSide(
+                color: Color(0xFFFFB317),
+              ),
+            ),
             border: OutlineInputBorder(
               borderSide: BorderSide(color: Colors.grey.shade400),
             ),
@@ -313,6 +318,11 @@ class _showPassState extends State<showPass> {
               enabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.grey.shade400),
               ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: const BorderSide(
+                  color: Color(0xFFFFB317),
+                ),
+              ),
               border: OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.grey.shade400),
               ),
@@ -329,3 +339,8 @@ class _showPassState extends State<showPass> {
     });
   }
 }
+
+
+
+
+

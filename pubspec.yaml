@@ -43,6 +43,9 @@ dependencies:
   flutter_screen_scaler: ^2.1.0
   sizer: ^2.0.15
   responsive_sizer: ^3.0.5+1
+  image_picker: ^0.8.5+1
+  currencylistpicker: ^0.0.2-nullsafety.0
+  date_field: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -68,20 +71,21 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/bill-to-logo.png
-    - assets/images/back_banner.png
-    - assets/images/banner1.png
-    - assets/images/billlogo.png
-    - assets/images/documentlogo.png
-    - assets/images/grouplogo.png
-    - assets/images/wid_logo.png
-    - assets/images/my_invoices.png
-    - assets/images/reports.png
-    - assets/images/customar.png
-    - assets/images/settings.png
-    - assets/images/add_user.png
-    - assets/images/my_invoices.png
-    - assets/images/new_invoices.png
+    - assets/images/
+#    - assets/images/bill-to-logo.png
+#    - assets/images/back_banner.png
+#    - assets/images/banner1.png
+#    - assets/images/billlogo.png
+#    - assets/images/documentlogo.png
+#    - assets/images/grouplogo.png
+#    - assets/images/wid_logo.png
+#    - assets/images/my_invoices.png
+#    - assets/images/reports.png
+#    - assets/images/customar.png
+#    - assets/images/settings.png
+#    - assets/images/add_user.png
+#    - assets/images/my_invoices.png
+#    - assets/images/new_invoices.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
